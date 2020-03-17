@@ -1,0 +1,31 @@
+.logoHeader {
+  height: 5vh;
+}
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.navbarHome {
+  margin-left: 50px;
+}
+
+.navLinks {
+  float: left !important;
+}
+
+.navItem a {
+  color: black !important;
+  margin-right: 50px !important;
+}
+
+.navItem a:hover {
+  color: rgba(244, 87, 0, 0.68) !important;
+}
+
+.waitList {
+  background-color: rgba(244, 87, 0, 0.68);
+  border-radius: 10%;
+  padding: 10px;
+  color: white !important;
+}
