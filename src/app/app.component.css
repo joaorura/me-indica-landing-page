@@ -1,0 +1,13 @@
+@font-face {
+  font-family:"LeelawUI";
+  src: url("../assets/fonts/LeelawUI.ttf") format("truetype");
+}
+
+* {
+  font-family: "Leelawadee UI", sans-serif;
+}
+
+.appPage {
+  padding: 0 !important;
+  margin: 0 !important;
+}
