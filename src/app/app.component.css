@@ -3,7 +3,11 @@
   src: url("../assets/fonts/LeelawUI.ttf") format("truetype");
 }
 
-* {
+h1, h2, h3 {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+p {
   font-family: "Leelawadee UI", sans-serif;
 }
 

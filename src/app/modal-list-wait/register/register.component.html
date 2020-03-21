@@ -1,0 +1,51 @@
+<div class="modal-body">
+  <div *ngIf="registerComplete">
+    <p>
+      Obrigado por se cadastrar!
+    </p>
+  </div>
+
+  <form *ngIf="!registerComplete"
+        [formGroup]="form"
+        (ngSubmit)="submitRegister()">
+    <div class="form-group">
+      <label for="inputName">Nome Completo:</label>
+      <input type="text"
+             class="form-control"
+             id="inputName"
+             placeholder="João M. L. Pereira"
+             formControlName="complete-name">
+
+
+      <div *ngIf="form.get('complete-name').touched">
+        <small *ngIf="form.get('complete-name').valid" class="form-text text-success">OK</small>
+        <small *ngIf="form.get('complete-name').invalid" class="form-text text-danger">Nome Inválido</small>
+      </div>
+
+      <br>
+
+      <label for="inputEmail">Email:</label>
+      <input type="email"
+             class="form-control"
+             id="inputEmail"
+             placeholder="joaom@meindica.com"
+             formControlName="the-email">
+
+      <div *ngIf="form.get('the-email').touched">
+        <small *ngIf="form.get('the-email').valid" class="form-text text-success">OK</small>
+        <small *ngIf="form.get('the-email').invalid" class="form-text text-danger">Email Inválido</small>
+      </div>
+    </div>
+
+    <small *ngIf="form.valid && !registerComplete">{{message}}</small>
+    <div class="modal-footer justify-content-start">
+      <button type="submit"
+              [disabled]="trying"
+              *ngIf="!registerComplete"
+              class="btn btn-primary">
+        Cadastre-se agora
+      </button>
+    </div>
+  </form>
+</div>
+

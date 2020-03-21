@@ -1,53 +1,62 @@
-.contentArea {
-  padding: 0;
-  margin: 0;
-}
-
-.contentAreaSub {
-  height: 50vh;
-}
-
-.textAreaMain {
-  background-color: rgb(255, 135, 0);
-  color: white;
+.rowStyle0 {
   height: 60vh !important;
 }
 
-.textAreaMain button {
-  background-color: rgba(255, 255, 0, 0.65);
+.waitList {
+  background-color: rgba(244, 87, 0, 0.68);
+  border-radius: 10%;
   padding: 10px;
-  border-radius: 7%;
-  color: rgb(255, 135, 0) !important;
+  color: white !important;
 }
 
-.textAreaMain a:hover {
-  color: gray !important;
+.areaText {
+  padding: 5vh 5vw 5vh 5vw;
 }
 
-.textAreaSub {
+.areaImg {
+  height: 30vh;
+}
+
+.rowStyle1 {
   height: 50vh;
 }
 
-.contentLine {
-  width: 60%;
-}
-
-.imgAreaMain {
+#img0 {
   background-color: rgb(255, 204, 0);
 }
 
-.imgAreaMain img {
-  width: 70%;
+#img0 img {
 }
 
-.areaWhite {
+#img1 {
+  background-color: rgb(255, 204, 0);
+}
+
+#img2 {
+  background-color: rgb(255, 77, 138);
+}
+
+#img3 {
+  background-color: rgb(255, 77, 138);
+}
+
+#text0 {
+  background-color: rgb(255, 135, 0);
+  color: white;
+}
+
+#text0 .row.justify-content-start{
+  padding-left: 5% !important;
+}
+
+#text1 {
   background-color: #f5f5f5;
 }
 
-.background-color-0 {
-  background-color: rgb(255, 204, 0);
+#text2 {
+  background-color: #f5f5f5;
 }
 
-.background-color-1 {
-  background-color: rgb(255, 77, 138);
+#text3 {
+  background-color: #f5f5f5;
 }
