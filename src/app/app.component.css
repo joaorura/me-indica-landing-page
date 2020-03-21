@@ -3,6 +3,11 @@
   src: url("../assets/fonts/LeelawUI.ttf") format("truetype");
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 h1, h2, h3 {
   font-family: "Helvetica Neue", sans-serif;
 }
