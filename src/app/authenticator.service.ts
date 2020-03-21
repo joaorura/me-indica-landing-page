@@ -17,9 +17,6 @@ export class AuthenticatorService {
             } else {
               observer.next(false);
             }
-          },
-          () => {
-            observer.next(false);
           });
     });
   }

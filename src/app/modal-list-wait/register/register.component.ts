@@ -45,7 +45,6 @@ export class RegisterComponent implements OnInit {
       );
 
       if (!this.trying) {
-        console.log('dasdadasdasaaa');
         this.trying = true;
         this.message = '';
         const observable = this.authenticatorService.registerUser(user);
@@ -53,7 +52,6 @@ export class RegisterComponent implements OnInit {
           this.registerComplete = result;
           this.trying = false;
           this.message = 'O email já está sendo usado. Por favor tente com um outro!';
-          console.log(result);
         });
       }
     }
